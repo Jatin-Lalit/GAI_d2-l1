@@ -31,7 +31,7 @@ app.post('/', async (req, res) => {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                model: "gpt-3.5-turbo",
+                model: "pt-3.5-turbo-1106",
                 messages: [{ role: "user", content: q }],
                 max_tokens: 1000
             })
