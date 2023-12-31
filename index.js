@@ -45,7 +45,7 @@ app.post('/', async (req, res) => {
             res.status(200).send({ code: data });
         } else {
             // Handle the case when response.choices is empty
-            res.status(500).send({ msg: "No valid response from the API" });
+            res.send({ msg: "No valid response from the API" });
         }
     } catch (error) {
         console.log(error);
